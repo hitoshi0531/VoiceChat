@@ -1,38 +1,491 @@
-.App {
-  text-align: center;
+* {
+    font-family: sans-serif;
+ }
+ 
+ body {
+    background-color:rgb(98, 203, 237);
+    margin: 1rem 5%;
+ }
+ 
+ h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 1rem 0 1rem;
+ }
+ 
+ h1 + p {
+    text-align: center;
+ }
+ 
+ h2 {
+    font-size: 1.5rem;
+    text-align: center;
+ }
+ 
+ h2 + p {
+    text-align: center;
+ }
+ 
+ header > img {
+    display: block;
+    margin: 0 auto;
+    max-height: 10rem;
+ }
+
+ header {
+   text-align: right;
+   margin: 1%;
+   font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header > * {
+   margin:0 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    background-color: rgba(5, 2, 35, 0.793);
+    border-radius: 0.5rem;
+ }
+ 
+ nav ul {
+    list-style: none;
+    text-align: center;
+ }
+ 
+ nav li {
+    display: inline-block;
+    margin: 1%;
+    font-weight: bold;
+ }
+ 
+ nav li Link {
+    text-decoration-line: none;
+ }
+
+ main > img {
+      align-items: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 10rem;
+      margin-top: 0.5rem;
+   }
+ 
+ section {
+    display: flex;
+ }
+
+section.friends-gallery {
+   flex-wrap: wrap;
+   justify-content: space-evenly;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section.friends-gallery img{
+   display:flex;
+   aspect-ratio: auto;
+   max-height: 15rem;
+   margin-top: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+section.friends-gallery figure {
+   font-size: 15pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section.listeningState {
+   margin: 0.5rem 0.5rem;
 }
+
+section.buttonSection > button {
+   background-color:rgb(146, 228, 255);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+   border-radius: 0.5rem;
+   border-style: none;
+   display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 40%;
+   height: 3rem;
+   margin: auto;
+	padding: 1rem 0rem;
+   font-size: 1rem;
+	font-weight: bold;
+	color: black;
+	transition: 0.5s;
+   cursor: pointer;
+}
+
+section.buttonSection > button:hover {
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+	transform: translateY(0px);
+}
+
+section.recognisedTextSection {
+   margin-top: 1rem;
+   min-height: 3em;
+   border: dotted;
+   padding: 10px;
+   background-color: aliceblue;
+}
+
+section.responsedTextSection {
+   margin-top: 0.5rem;
+   min-height: 3em;
+   border: solid;
+   padding: 10px;
+   background-color: aliceblue;
+}
+
+section.getSpeech {
+   height: 1.8rem;
+   border-radius: 0.5rem;
+}
+.getSpeech button {
+   background-color:rgb(255, 255, 255);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+   border-radius: 0.4rem;
+   border-style: none;
+   display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 10rem;
+   height: 1.8rem;
+   font-size: 1rem;
+	color: rgb(0, 0, 0);
+	transition: 0.5s;
+   cursor: pointer; 
+ }
+
+.getSpeech > button:hover {
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+	transform: translateY(0px);
+}
+
+/*
+ section:nth-child(3) img {
+    display:flex;
+    aspect-ratio: auto;
+    max-height: 10rem;
+    margin: 0.5rem;
+    margin-top: 0.5rem;
+ }
+*/
+ 
+ article {
+    flex: 1;
+    margin: 0.5rem;
+ }
+
+ section > article {
+    background-color:rgb(146, 228, 255);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+ }
+ 
+ section > article:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+ }
+
+ /*
+ section:nth-child(1) > article a img {
+    display: block;
+    margin: 0 auto;
+    max-height: 5rem;
+ }
+ 
+ section:nth-child(1) > article {
+    background-color:rgb(146, 228, 255);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+ }
+ 
+ section:nth-child(1) > article:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+ }
+ 
+ section:nth-child(2) > article {
+    background-color:rgb(146, 228, 255);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+ }
+ 
+ section:nth-child(2) > article:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+ }
+*/
+
+ footer {
+    display: flex;
+    margin-top: 3rem;
+    background-color:rgb(80, 210, 253);
+ }
+ 
+ footer > div {
+    flex:1;
+ }
+ 
+ footer  div img {
+    max-height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+ }
+  
+ 
+ /* Setting LVHA rules to the links by default */
+ a:link {
+    color: blue;
+ }
+ 
+ Link:visited {
+    color: blueviolet;
+ }
+ 
+ Link:hover {
+    color: green;
+ }
+ 
+ Link:active {
+    color: white;
+    background-color: black;
+ }
+ 
+ 
+ /* Setting LVHA rules to the links under navigation tags */
+ nav > ul > li > a:link {
+    color:aliceblue;
+ }
+ 
+ nav > ul > li > a:visited {
+    color:aliceblue;
+ }
+ 
+ nav > ul > li > a:hover {
+    color:rgb(110, 115, 120);
+ }
+ 
+ nav > ul > li > a:active {
+    color:rgb(50, 53, 55);
+ }
+ 
+ 
+ /* Setting styles to the links under article tags*/
+ article > Link:link {
+    color: black;
+ }
+ 
+ article > Link:visited {
+    color: blueviolet;
+ }
+ 
+ article > Link:hover {
+    color: darkslategrey;
+ }
+ 
+ article > Link:active {
+    color:gray;
+ }
+ 
+ article > Link {
+    text-decoration-line: none;
+ }
+ 
+ div > .reactPlayer {
+   align-items: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0.5rem;
+}
+
+/* Add following styles to design the slidebars and switches */
+/* Customize select element */
+
+section.speechVoiceOption {
+   display: flex;
+   margin: 0.5rem 0.5rem;
+   font-size: 1rem;
+   align-items: center; /* 上下方向の中央揃え */
+}
+
+section.speechVoiceOption select {
+   padding: 0.4rem;
+   margin-left: 0.5rem;
+   border-radius: 0.5rem;
+   border: 1px solid #ccc;
+   background-color: #fff;
+   font-size: 1rem;
+}
+
+section > label {
+   display: flex;
+   align-items: center;
+}
+
+section.speechSpeedOption {
+   display: flex;
+   align-items: center; /* 上下方向の中央揃え */
+   margin: 0.5rem 0.5rem;
+}
+
+section.speechPitchOption {
+   display: flex;
+   align-items: center; /* 上下方向の中央揃え */
+   margin: 0.5rem 0.5rem;
+}
+
+section.responseTemperatureOption {
+   display: flex;
+   align-items: center; /* 上下方向の中央揃え */
+   margin: 0.5rem 0.5rem;
+}
+
+
+/* Customize range input */
+input[type="range"] {
+   width: 30%;
+   margin: 0.5rem 0.5rem;
+   display: flex;
+   justify-content: center;
+}
+
+/* Add styles for the circle on the range input */
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 1.5rem;
+   height: 1.5rem;
+   border-radius: 50%;
+   background-color: #3498db;
+   border: 1px solid #fff;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Switch styles for language selection */
+section.languageSwitchSection {
+   margin: 0.5rem 0.5rem;
+}
+
+/* Customize toggle switch */
+label.languageSwitchLabel {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+}
+
+label.languageSwitchLabel input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+span.languageSwitch {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: black;
+   box-shadow: 0 0 1px black;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   border-radius: 5%;
+}
+
+span.languageSwitch:after {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 30px;
+   bottom: 4px;
+   background-color: white;
+   box-shadow: 0 0 1px black;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   border-radius: 10%;
+}
+
+input:checked + span.languageSwitch {
+   background-color: black;
+}
+
+input:checked + span.languageSwitch:after {
+   -webkit-transform: translateX(-26px);
+   -ms-transform: translateX(-26px);
+   transform: translateX(-26px);
+}
+
+/* Toggle switch label styles */
+section > .languageSwitchValue {
+   display: flex;
+   margin: 0.5rem 0.5rem;
+   font-size: 1rem;
+   align-items: center; /* 上下方向の中央揃え */
+}
+
+
+/*audioSwitch*/
+/* Switch styles for audio selection */
+section.audioSwitchSection {
+   margin: 0.5rem 0.5rem;
+}
+
+/* Customize toggle switch */
+label.audioSwitchLabel {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+}
+
+label.audioSwitchLabel input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+span.audioSwitch {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #2196F3;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   border-radius: 34px;
+}
+
+span.audioSwitch:after {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 30px;
+   bottom: 4px;
+   background-color: white;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   border-radius: 50%;
+}
+
+input:checked + span.audioSwitch {
+   background-color: #ccc;
+}
+
+input:checked + span.audioSwitch:after {
+   -webkit-transform: translateX(-26px);
+   -ms-transform: translateX(-26px);
+   transform: translateX(-26px);
+}
+
+section > .audioSwitchValue {
+   display: flex;
+   margin: 0rem 0.5rem;
+   font-size: 1rem;
+   align-items: center; /* 上下方向の中央揃え */
+}
+

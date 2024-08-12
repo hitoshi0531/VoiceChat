@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# API keys
+.env
+/src/config.json
+wombat2023-7d7baa32b7dd.json
+
 # dependencies
 /node_modules
 /.pnp

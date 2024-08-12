@@ -1,0 +1,83 @@
+* {
+  font-family: sans-serif;
+}
+
+.Signup {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.Signup fieldset {
+  display: flex;
+  width: 480px;
+  padding: 16px;
+  background-color:rgb(200, 241, 255);
+  border: 1px solid #000000;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.Signup label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.Signup sup {
+  color: red;
+  top: -2px;
+  font-size: 95%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.Signup input,
+select {
+  border-radius: 4px;
+  border: 1px solid #000000;
+  height: 32px;
+  padding: 0 8px;
+}
+
+.Signup .Field {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Signup .FieldError {
+  position: absolute;
+  bottom: -6px;
+  color: red;
+  font-size: 12px;
+}
+
+.Signup .Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Signup button {
+  padding: 12px;
+  width: 240px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background-color: darkblue;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Signup button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #000000;
+  color: #666666;
+  cursor: not-allowed;
+}
